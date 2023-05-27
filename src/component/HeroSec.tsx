@@ -3,7 +3,7 @@ import Dots from '../path/Dots-white'
 
 const HeroSec = () => {
   return (
-    <div className='relative'>
+    <section className='relative'>
       <span className='absolute bg-[#3BC5E9] h-full right-0 w-[407px] -z-10'></span>
       <div className='px-32 py-56'>
         <div className='grid grid-cols-2'>
@@ -15,11 +15,14 @@ const HeroSec = () => {
             <span className='absolute opacity-50 right-0 -top-[65px] -z-[1]'>
               <Dots />
             </span>
+            <span className='absolute opacity-50 left-[145px] -bottom-[30px] -z-[1]'>
+              <Dots />
+            </span>
             <img src={headerSec} alt='' />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
