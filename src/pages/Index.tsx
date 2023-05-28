@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import '../css/style.css'
 import HeroSec from '../component/HeroSec'
 import DirectSearch from '../component/DirectSearch'
+import AboutUs from '../component/AboutUs'
 
 const Home = () => {
   return (
@@ -29,8 +30,10 @@ const Home = () => {
       </header>
       {/* header sections */}
       <HeroSec />
-      {/* Hero Banner */}
+      {/* Direct Search */}
       <DirectSearch />
+      {/* About */}
+      <AboutUs />
     </div>
   )
 }

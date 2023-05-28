@@ -1,5 +1,5 @@
 import headerSec from '../assets/img/header-section.png'
-import Dots from '../path/Dots-white'
+import Dots from '../assets/svg/Dots-white'
 
 const HeroSec = () => {
   return (

@@ -1,10 +1,10 @@
-import BusIcon from "../path/BusIcon"
-import DotsBlue from "../path/Dots-blue"
-import Location from "../path/Location"
+import BusIcon from "../assets/svg/BusIcon"
+import DotsBlue from "../assets/svg/Dots-blue"
+import Location from "../assets/svg/Location"
 
 const DirectSearch = () => {
   return (
-    <section className='px-32 pb-36 relative'>
+    <section className='px-32 relative'>
       <span className='absolute -top-[170px] left-[60px]'>
         <DotsBlue />
       </span>
