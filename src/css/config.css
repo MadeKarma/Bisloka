@@ -5,3 +5,30 @@
 span {
   display: block;
 }
+.swiper {
+  margin-inline: 5rem;
+  padding-inline: 2rem;
+}
+.swiper-wrapper {
+  padding-bottom: 20px;
+}
+.swiper-button-next {
+  right: 0px !important;
+}
+.swiper-button-prev {
+  left: 0px !important;
+}
+.swiper-button-next,
+.swiper-button-prev{
+  @apply 
+  bg-white
+  shadow-xl 
+  outline-none
+  p-8 
+  rounded-full;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px !important;
+  font-weight: bolder;
+}

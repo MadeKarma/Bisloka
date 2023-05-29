@@ -4,6 +4,8 @@ import '../css/style.css'
 import HeroSec from '../component/HeroSec'
 import DirectSearch from '../component/DirectSearch'
 import AboutUs from '../component/AboutUs'
+import OurFleet from '../component/OurFleet'
+import Feedback from '../component/Feedback'
 
 const Home = () => {
   return (
@@ -34,6 +36,10 @@ const Home = () => {
       <DirectSearch />
       {/* About */}
       <AboutUs />
+      {/* Our Fleet */}
+      <OurFleet />
+      {/* Feedback costumer */}
+      <Feedback />
     </div>
   )
 }

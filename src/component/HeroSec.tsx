@@ -1,5 +1,5 @@
-import headerSec from '../assets/img/header-section.png'
 import Dots from '../assets/svg/Dots-white'
+import ImgHeader from '../assets/img/header-section.png'
 
 const HeroSec = () => {
   return (
@@ -9,16 +9,16 @@ const HeroSec = () => {
         <div className='grid grid-cols-2'>
           <div className='w-[472px]'>
             <h1 className='capitalize font-bold text-[52px]'>cara mudah sewa bus pariwisata</h1>
-            <p className='text-[14px] leading-8 pr-16'>Booking bus untuk segala keperluan berpergian anda seperti perjalanan religi, kunjungan industri sampai rekreasi bersama orang-orang tercinta</p>
+            <p className='leading-8 text-[14px] pr-16'>Booking bus untuk segala keperluan berpergian anda seperti perjalanan religi, kunjungan industri sampai rekreasi bersama orang-orang tercinta</p>
           </div>
           <div className='justify-self-end relative'>
             <span className='absolute opacity-50 right-0 -top-[65px] -z-[1]'>
               <Dots />
             </span>
-            <span className='absolute opacity-50 left-[145px] -bottom-[30px] -z-[1]'>
+            <span className='absolute -bottom-[30px] left-[145px] opacity-50 -z-[1]'>
               <Dots />
             </span>
-            <img src={headerSec} alt='' />
+            <img src={ImgHeader} alt='' />
           </div>
         </div>
       </div>
