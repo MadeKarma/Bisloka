@@ -842,6 +842,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-\[\#3BC5E9\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 197 233 / var(--tw-border-opacity));
+}
+
 .bg-\[\#3BC5E9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(59 197 233 / var(--tw-bg-opacity));
@@ -1067,12 +1072,16 @@ video {
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .font-semibold {
   font-weight: 600;
 }
 
-.font-extrabold {
-  font-weight: 800;
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
@@ -1091,12 +1100,12 @@ video {
   line-height: 2rem;
 }
 
-.tracking-widest {
-  letter-spacing: 0.1em;
-}
-
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-\[\#333\] {
@@ -1160,6 +1169,12 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -1209,4 +1224,24 @@ span {
 .swiper-button-prev::after {
   font-size: 25px !important;
   font-weight: bolder;
+}
+
+.hover\:border-slate-700:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.hover\:bg-slate-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#333\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#222\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(34 34 34 / var(--tw-text-opacity));
 }
