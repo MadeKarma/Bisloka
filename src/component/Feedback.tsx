@@ -8,19 +8,19 @@ import DotsBlue from '../assets/svg/Dots-blue';
 const Feedback = () => {
   return (
     <section className='pb-20 pt-16 relative'>
-      <div className='absolute left-[85px] top-[200px] -z-10'>
+      <div className='absolute left-[85px] top-[130px] -z-10'>
         <DotsBlue />
       </div>
        <div className='flex flex-col font-bold items-start justify-start mb-12 px-32'>
          <h4 className='pb-4 text-[#3BC5E9] tracking-widest uppercase'>feedback customer</h4>
          <h1 className='capitalize text-5xl'>Apa kata mereka tentang bisloka ?</h1>
        </div>
-       <div>
-         <Swiper
-           modules={[Navigation, Pagination, A11y]}
-           spaceBetween={52}
-           slidesPerView={2.5}
-         >
+       <div className='pl-20'>
+        <Swiper
+          modules={[Navigation, Pagination, A11y]}
+          spaceBetween={52}
+          slidesPerView={2.5}
+        >
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center relative pt-12 z-10'>
                   <div className='absolute bg-red-400 h-[62px] overflow-hidden rounded-full top-4 w-[62px]'>
@@ -98,7 +98,7 @@ const Feedback = () => {
               </div>
             </SwiperSlide>
             <SwiperNavButton />
-         </Swiper>
+        </Swiper>
        </div>
      </section>
   )

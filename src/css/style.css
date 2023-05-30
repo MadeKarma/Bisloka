@@ -566,6 +566,10 @@ video {
   left: 145px;
 }
 
+.left-\[40px\] {
+  left: 40px;
+}
+
 .left-\[45px\] {
   left: 45px;
 }
@@ -594,8 +598,12 @@ video {
   top: 1rem;
 }
 
-.top-\[200px\] {
-  top: 200px;
+.top-\[130px\] {
+  top: 130px;
+}
+
+.top-\[30px\] {
+  top: 30px;
 }
 
 .-z-10 {
@@ -612,6 +620,14 @@ video {
 
 .z-50 {
   z-index: 50;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 
 .my-7 {
@@ -633,6 +649,10 @@ video {
 
 .mt-14 {
   margin-top: 3.5rem;
+}
+
+.mt-\[18px\] {
+  margin-top: 18px;
 }
 
 .flex {
@@ -675,6 +695,10 @@ video {
   width: 66.666667%;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-\[29px\] {
   width: 29px;
 }
@@ -701,6 +725,10 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -731,6 +759,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
@@ -749,6 +781,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-\[18px\] {
+  gap: 18px;
 }
 
 .gap-\[51px\] {
@@ -811,6 +847,10 @@ video {
   background-color: rgb(59 197 233 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#3bc6e91a\] {
+  background-color: #3bc6e91a;
+}
+
 .bg-blue-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
@@ -843,9 +883,19 @@ video {
   padding: 2rem;
 }
 
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-32 {
@@ -871,6 +921,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-4 {
@@ -921,6 +976,10 @@ video {
 
 .pb-\[45px\] {
   padding-bottom: 45px;
+}
+
+.pl-20 {
+  padding-left: 5rem;
 }
 
 .pr-16 {
@@ -986,6 +1045,10 @@ video {
   font-size: 18px;
 }
 
+.text-\[42px\] {
+  font-size: 42px;
+}
+
 .text-\[52px\] {
   font-size: 52px;
 }
@@ -1008,6 +1071,10 @@ video {
   font-weight: 600;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1026,6 +1093,10 @@ video {
 
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-\[\#333\] {
@@ -1093,12 +1164,19 @@ video {
   transition-duration: 200ms;
 }
 
+input {
+  outline: none;
+}
+
 span {
   display: block;
 }
 
 .swiper {
-  margin-inline: 5rem;
+  /* overflow: unset; */
+}
+
+.swiper-slide {
   padding-inline: 2rem;
 }
 

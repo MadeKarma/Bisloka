@@ -9,7 +9,7 @@ const SwiperNavButton = () => {
   return (
     <div className='gap-3 flex pb-4'>
       <button onClick={() => swiper.slidePrev()} onMouseEnter={() => setIsHoverOne(true)} onMouseLeave={() => setIsHoverOne(false)} 
-      className={`${isHoverOne? "bg-[#3BC5E9]" : "bg-white"} shadow-md shadow-slate-400 rounded-full p-3`}
+      className={`${isHoverOne? "bg-[#3BC5E9]" : "bg-white"} duration-200 shadow-md shadow-slate-400 rounded-full p-3`}
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none">
           <path
@@ -22,7 +22,7 @@ const SwiperNavButton = () => {
         </svg>
       </button>
       <button onClick={() => swiper.slideNext()} onMouseEnter={() => setIsHoverTwo(true)} onMouseLeave={() => setIsHoverTwo(false)} 
-      className={`${isHoverTwo? "bg-[#3BC5E9]" : "bg-white"} shadow-md shadow-slate-400 rounded-full p-3`}>
+      className={`${isHoverTwo? "bg-[#3BC5E9]" : "bg-white"} duration-200 shadow-md shadow-slate-400 rounded-full p-3`}>
         <svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='none'>
           <path
             stroke={isHoverTwo? "#fff" : "#3BC5E9"}

@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+input {
+  outline: none;
+}
 span {
   display: block;
 }
 .swiper {
-  margin-inline: 5rem;
+  /* overflow: unset; */
+}
+.swiper-slide {
   padding-inline: 2rem;
 }
-
 .swiper-wrapper {
   padding-bottom: 20px;
 }
