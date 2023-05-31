@@ -7,8 +7,8 @@ const AboutUs = () => {
   return (
     <section className='h-full py-[67px] relative'>
       <div className='absolute bg-[#3BC5E9] h-[600px] left-0 opacity-5 top-0 w-11/12 -z-10'></div>
-      <div className='fc-container'>
-        <div className='absolute -bottom-[60px] right-[60px]'>
+      <div className='bs-container'>
+        <div className='absolute -bottom-[60px] right-0'>
           <DotsBlue />
         </div>
         <div>

@@ -3,32 +3,35 @@ import Bus1 from '../assets/img/armadaOne.png'
 import Bus2 from '../assets/img/armadaTwo.png'
 import Bus3 from '../assets/img/armadaThree.png'
 import { Navigation, Scrollbar, A11y } from 'swiper'
+import { useState } from "react";
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import '../css/config.css'
 import User from '../assets/svg/User'
-import Arrow from '../assets/svg/Arrow'
 import DotsBlue from '../assets/svg/Dots-blue'
+import NavButtonOurFleet from './NavButtonOurFleet'
 
 const OurFleet = () => {
+  const [isHover, setIsHover] = useState(false)
+
   return (
     <section className='pb-20 pt-32 relative'>
       <div className='absolute bottom-[145px] left-[45px]'>
         <DotsBlue />
       </div>
-      <div className='fc-container'>
+      <div className='bs-container'>
         <div className='flex flex-col font-bold items-center justify-center mb-16'>
           <h4 className='pb-4 text-[#3BC5E9] tracking-widest uppercase'>armada kami</h4>
           <h1 className='capitalize text-5xl'>sesuaikan dengan keperluan anda</h1>
         </div>
-        <div>
+        <div className='relative'>
           <Swiper
           modules={[Navigation, Scrollbar, A11y]}
-          spaceBetween={2}
+          spaceBetween={30}
           slidesPerView={3}
-          navigation
+          style={{paddingInline : '24px'}}
         >
             <SwiperSlide>
               <div className='bg-white p-11 rounded-[15px] shadow-lg'>
@@ -150,14 +153,24 @@ const OurFleet = () => {
                 </div>
               </div>
             </SwiperSlide>
+            <NavButtonOurFleet />
           </Swiper>
         </div>
-      </div>
-      
-      <div className='flex justify-end mt-14 px-32'>
-        <button className='bg-[#3BC5E9] gap-2 flex items-center px-16 py-5 rounded-full text-white'>
-          <h1 className='font-bold'>Lihat semua Bus</h1><Arrow />
-        </button>
+        
+        <div className='flex justify-end mt-14'>
+          <button className='bg-[#3BC5E9] duration-100 gap-2 flex items-center px-16 py-5 rounded-full text-white hover:bg-[#38acc9] hover:text-[#555]' onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
+            <h1 className='font-bold'>Lihat semua Bus</h1>
+            <svg xmlns='http://www.w3.org/2000/svg' width='22' height='18' fill='none'>
+              <path
+                stroke={isHover? '#555' : '#fff'}
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='3'
+                d='M1.688 9.249h18.515m-7-7l7 7-7 7'
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
   )

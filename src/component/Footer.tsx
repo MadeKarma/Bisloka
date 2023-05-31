@@ -5,7 +5,7 @@ import BasketBall from '../assets/img/BasketBall.png'
 
 const Footer = () => {
   return (
-    <footer className='fc-container py-[100px]'>
+    <footer className='bs-container py-[100px]'>
       <div className='grid grid-cols-8 justify-items-center text-[#828282]'>
         <div className='col-span-2'>
           <h1>&copy; Design by <span className='font-bold inline'>Innolabs Studio</span></h1>

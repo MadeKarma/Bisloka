@@ -3,7 +3,7 @@ import DotsBlue from "../assets/svg/Dots-blue"
 const Contact = () => {
   return (
     <section className='bg-[#3bc6e91a] relative'>
-      <div className='fc-container'>
+      <div className='bs-container'>
         <div className='absolute left-[40px] top-[30px]'>
           <DotsBlue />
         </div>
@@ -15,7 +15,7 @@ const Contact = () => {
           <div className='col-span-2 flex flex-col gap-[18px] justify-center'>
             <input className='py-5 px-11 rounded-[10px]' type='text' placeholder='Nama Lengkap' />
             <input className='py-5 px-11 rounded-[10px]' type='text' placeholder='Email' />
-            <button className='bg-[#3BC5E9] font-extrabold mt-[18px] py-5 px-11 rounded-[10px] tracking-wider text-white'>Subcribe</button>
+            <button className='bg-[#3BC5E9] duration-200 font-extrabold mt-[18px] py-5 px-11 rounded-[10px] tracking-wider text-white hover:bg-[#38acc9] hover:text-gray-300'>Subcribe</button>
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react"
-import SwiperNavButton from './SwiperNavButton';
 import DummyImg from '../assets/img/dummy.png'
-import Star from '../assets/svg/Star';
 import DotsBlue from '../assets/svg/Dots-blue';
+import Star from '../assets/svg/Star';
+import SwiperNavButton from './NavButtonFeedback';
 
 const Feedback = () => {
   return (
@@ -11,15 +11,16 @@ const Feedback = () => {
       <div className='absolute left-[85px] top-[130px] -z-10'>
         <DotsBlue />
       </div>
-       <div className=' fc-container flex flex-col font-bold items-start justify-start mb-12'>
+       <div className='bs-container flex flex-col font-bold items-start justify-start mb-12'>
          <h4 className='pb-4 text-[#3BC5E9] tracking-widest uppercase'>feedback customer</h4>
          <h1 className='capitalize text-5xl'>Apa kata mereka tentang bisloka ?</h1>
        </div>
-       <div className='fc-container overflow-visible'>
+       <div className='bs-container overflow-visible'>
         <Swiper
           modules={[Navigation, Pagination, A11y]}
-          spaceBetween={10}
+          spaceBetween={40}
           slidesPerView={2.5}
+          style={{overflow : 'visible'}}
         >
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center relative pt-12 z-10'>
