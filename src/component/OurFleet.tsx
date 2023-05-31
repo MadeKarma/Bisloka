@@ -31,7 +31,7 @@ const OurFleet = () => {
           modules={[Navigation, Scrollbar, A11y]}
           spaceBetween={30}
           slidesPerView={3}
-          style={{paddingInline : '24px'}}
+          style={{paddingInline : '24px', paddingBottom: '1rem'}}
         >
             <SwiperSlide>
               <div className='bg-white p-11 rounded-[15px] shadow-lg'>
