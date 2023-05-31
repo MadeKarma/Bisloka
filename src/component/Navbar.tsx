@@ -5,17 +5,12 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   const [Navbar, setNavbar] = useState(false)
   window.addEventListener('scroll', () => {
-    // if (window.scrollY >= 20) {
-    //   setNavbar(true)
-    // } else {
-    //   setNavbar(false)
-    // }
     window.scrollY? setNavbar(true) : setNavbar(false)
   })
 
   return (
     <header className={`${Navbar? "bg-white shadow-lg" : "" } fixed top-0 w-full z-50 duration-200`}>
-      <div className='flex items-center justify-between px-32 py-4'>
+      <div className='fc-container flex items-center justify-between py-4'>
         <nav className='flex font-normal gap-8 text-[#828282]'>
           <img src={icon} alt="" />
           <Link to={'#'} className='hover:text-[#222]'>Booking</Link>

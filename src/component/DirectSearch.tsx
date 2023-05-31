@@ -4,7 +4,7 @@ import Location from "../assets/svg/Location"
 
 const DirectSearch = () => {
   return (
-    <section className='px-32 relative'>
+    <section className='fc-container relative'>
       <span className='absolute left-[60px] -top-[170px]'>
         <DotsBlue />
       </span>

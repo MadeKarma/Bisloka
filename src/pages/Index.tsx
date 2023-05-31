@@ -6,6 +6,7 @@ import Feedback from '../component/Feedback'
 import HeroSec from '../component/HeroSec'
 import Navbar from '../component/Navbar'
 import OurFleet from '../component/OurFleet'
+import Footer from '../component/Footer'
 
 const Home = () => {
   return (
@@ -24,6 +25,8 @@ const Home = () => {
       <Feedback />
       {/* Contact */}
       <Contact />
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }

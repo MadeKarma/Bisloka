@@ -7,18 +7,18 @@ import DotsBlue from '../assets/svg/Dots-blue';
 
 const Feedback = () => {
   return (
-    <section className='pb-20 pt-16 relative'>
+    <section className='overflow-hidden pb-20 pt-16 relative'>
       <div className='absolute left-[85px] top-[130px] -z-10'>
         <DotsBlue />
       </div>
-       <div className='flex flex-col font-bold items-start justify-start mb-12 px-32'>
+       <div className=' fc-container flex flex-col font-bold items-start justify-start mb-12'>
          <h4 className='pb-4 text-[#3BC5E9] tracking-widest uppercase'>feedback customer</h4>
          <h1 className='capitalize text-5xl'>Apa kata mereka tentang bisloka ?</h1>
        </div>
-       <div className='pl-20'>
+       <div className='fc-container overflow-visible'>
         <Swiper
           modules={[Navigation, Pagination, A11y]}
-          spaceBetween={52}
+          spaceBetween={10}
           slidesPerView={2.5}
         >
             <SwiperSlide>
